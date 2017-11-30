@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your user name"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User name"/>
+
+    <Button
+        android:id="@+id/btn_internal_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal cache"/>
+
+    <Button
+        android:id="@+id/btn_external_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External cache"/>
+
+    <Button
+        android:id="@+id/btn_external_private"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External private"/>
+
+    <Button
+        android:id="@+id/btn_external_public"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External public"/>
+
+
+    <Button
+        android:id="@+id/show_cache_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show results"
+        android:background="@color/colorPrimary"/>
+
+</LinearLayout>
