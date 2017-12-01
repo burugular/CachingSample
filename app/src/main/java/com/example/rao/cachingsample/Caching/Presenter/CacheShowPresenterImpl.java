@@ -51,7 +51,7 @@ public class CacheShowPresenterImpl implements CacheShowPresenter {
 
     @Override
     public void loadPublicExternalFile() {
-        File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS);
+        File folder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
         File myFile = new File(folder, "myData4.txt");
         String data = readData(myFile);
         cacheShowView.showMessage(data);
@@ -68,7 +68,7 @@ public class CacheShowPresenterImpl implements CacheShowPresenter {
             }
             return stringBuffer.toString();
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+                e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }

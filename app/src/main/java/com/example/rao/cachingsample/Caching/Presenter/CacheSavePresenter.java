@@ -1,5 +1,6 @@
 package com.example.rao.cachingsample.Caching.Presenter;
 
+import android.app.Activity;
 import android.content.Context;
 
 import com.example.rao.cachingsample.Caching.View.CacheSaveView;
@@ -11,7 +12,7 @@ import java.io.File;
  */
 
 public interface CacheSavePresenter {
-    void setView(CacheSaveView cacheSaveView, Context context);
+    void setView(CacheSaveView cacheSaveView, Context context, Activity activity);
     void saveInternalCache(String data);
     void saveExternalCache(String data);
     void saveExternalPrivate(String data);

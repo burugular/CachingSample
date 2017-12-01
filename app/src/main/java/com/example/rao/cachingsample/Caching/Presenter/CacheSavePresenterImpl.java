@@ -1,8 +1,13 @@
 package com.example.rao.cachingsample.Caching.Presenter;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Environment;
+import android.support.v4.app.ActivityCompat;
 
+import com.example.rao.cachingsample.App.Constants;
 import com.example.rao.cachingsample.Caching.View.CacheSaveView;
 
 import java.io.File;
@@ -18,10 +23,12 @@ public class CacheSavePresenterImpl implements CacheSavePresenter {
 
     CacheSaveView cacheSaveView;
     Context context;
+    Activity activity;
     @Override
-    public void setView(CacheSaveView cacheSaveView, Context context) {
+    public void setView(CacheSaveView cacheSaveView, Context context, Activity activity) {
         this.cacheSaveView = cacheSaveView;
         this.context = context;
+        this.activity = activity;
     }
 
     @Override
